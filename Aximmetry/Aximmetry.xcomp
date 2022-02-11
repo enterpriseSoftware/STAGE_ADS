@@ -8,7 +8,7 @@
 		<Parameter type="ArrChannelParams">
 			<PreviewChannels type="dictionary" />
 		</Parameter>
-		<Parameter type="ArrEditContextParams" LastControlBoard="CAMERAS">
+		<Parameter type="ArrEditContextParams" LastControlBoard="OVERLAYS">
 			<ControlBoardOrder type="list" itemType="String" />
 			<BookmarkSet type="dictionary" />
 		</Parameter>
@@ -21,6 +21,7 @@
 				<item type="ArrHistoryItem" UserName="Stockeds / DEXTON (DUNO234)" ModifiedTime="2021-06-26T08:47:05.6205898-05:00" />
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-01-13T17:16:29.9670709-06:00" />
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-06T18:20:02.0911968-06:00" />
+				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-10T20:34:25.6562252-06:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="null" Tags="null">
@@ -44,8 +45,8 @@
 	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
 		<ExtraData>
 			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
-			<item key="ViewCenter" type="PointF" value="653.1487, 168.7728" />
-			<item key="ZoomFactor" type="Single" value="0.7866278" />
+			<item key="ViewCenter" type="PointF" value="-41.95269, 0.4240253" />
+			<item key="ZoomFactor" type="Single" value="0.618783355" />
 		</ExtraData>
 	</Properties>
 	<Children>
@@ -810,11 +811,11 @@
 											<TimeFormat type="MediaTimeFormatModifier" FrameRate="30" ModType="True" ModFrame="False" ModMusical="False" ModBaseDate="False" ModDateTimeFormat="False" Type="Time" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2016-06-21T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" />
 											<Markers />
 										</Pin>
-										<Pin Name="PlayingState" Type="PinIntValue" Value="psPlaying" />
-										<Pin Name="Speed" Type="PinScalarValue" Value="0.07496252" />
-										<Pin Name="Backwards" Type="PinBoolValue" Value="True" />
-										<Pin Name="Bounce" Type="PinBoolValue" Value="True" />
-										<Pin Name="Looping" Type="PinBoolValue" Value="True" />
+										<Pin Name="PlayingState" Type="PinIntValue" Value="psStopped" />
+										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
+										<Pin Name="Backwards" Type="PinBoolValue" Value="False" />
+										<Pin Name="Bounce" Type="PinBoolValue" Value="False" />
+										<Pin Name="Looping" Type="PinBoolValue" Value="False" />
 										<Pin Name="StayInLoopReg" Type="PinBoolValue" Value="True" />
 										<Pin Name="AutoLoopReg" Type="PinBoolValue" Value="True" />
 										<Pin Name="LoopStart" Type="PinDoubleValue" Value="0" />
@@ -921,7 +922,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Selected" Type="PinIntValue" Value="5" />
+										<Pin Name="Selected" Type="PinIntValue" Value="1" />
 										<Pin Name="Value1" Type="PinVectorValue" Value="0" />
 										<Pin Name="Value2" Type="PinVectorValue" Value="1" />
 										<Pin Name="Value3" Type="PinVectorValue" Value="2" />
@@ -44871,7 +44872,7 @@
 						</ExtraData>
 					</Properties>
 					<PinValues>
-						<Pin Name="Selected" Type="PinIntValue" Value="1" />
+						<Pin Name="Selected" Type="PinIntValue" Value="0" />
 						<Pin Name="Value1" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value2" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value3" Type="PinScalarValue" Value="0" />
@@ -44899,7 +44900,7 @@
 						</ExtraData>
 					</Properties>
 					<PinValues>
-						<Pin Name="Selected" Type="PinIntValue" Value="1" />
+						<Pin Name="Selected" Type="PinIntValue" Value="0" />
 						<Pin Name="Value1" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value2" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value3" Type="PinScalarValue" Value="0" />
@@ -49599,1045 +49600,6 @@
 				<Connection FromModule="Scalar To Text 1" FromPin="Out" ToModule="Text Concat 1" ToPin="B" />
 				<Connection FromModule="Video Recorder 1" FromPin="RecFrames" ToModule="Scalar To Text 1" ToPin="Value" />
 				<Connection FromModule="Not 2" FromPin="Out" ToModule="Not" ToPin="In" />
-			</Connections>
-		</Module>
-		<Module Type="Compound">
-			<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="STAGE_ADS" IsLocked="False">
-				<ExtraData>
-					<item key="Importer" type="String" value="UnrealProject" />
-					<item key="ImporterVersion" type="Int32" value="7" />
-					<item key="ImportSourcePath" type="String" value="D:\STAGE_ADS\STAGE_ADS.uproject" />
-					<item key="ImportSourceHash" type="String" value="3EBF0D906DAA584F1933841BC2F6A9E1" />
-					<item key="Location" type="PointF" value="155, 0" />
-				</ExtraData>
-			</Properties>
-			<Children>
-				<Module Type="UnrealProject">
-					<Properties Name="Project" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="200, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="ProjectPath" Type="PinStringValue" Value="D:\STAGE_ADS\STAGE_ADS.uproject" DefValue="C:\Users\assis\OneDrive\Documents\Unreal Projects\STAGE_ADS\STAGE_ADS.uproject" />
-						<Pin Name="ProjectData" Type="PinBinBufferValue" Value="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" />
-						<Pin Name="Connection" Type="PinIntValue" Value="ucmCooked" />
-						<Pin Name="OutSize" Type="PinVectorValue" Value="0, 0" />
-						<Pin Name="Video1" Type="PinVideoValue" Value="" />
-						<Pin Name="Video2" Type="PinVideoValue" Value="" />
-						<Pin Name="Video3" Type="PinVideoValue" Value="" />
-						<Pin Name="Video4" Type="PinVideoValue" Value="" />
-						<Pin Name="Video5" Type="PinVideoValue" Value="" />
-						<Pin Name="Video6" Type="PinVideoValue" Value="" />
-						<Pin Name="Video7" Type="PinVideoValue" Value="" />
-						<Pin Name="Video8" Type="PinVideoValue" Value="" />
-						<Pin Name="Video9" Type="PinVideoValue" Value="" />
-						<Pin Name="Video10" Type="PinVideoValue" Value="" />
-						<Pin Name="Video11" Type="PinVideoValue" Value="" />
-						<Pin Name="Video12" Type="PinVideoValue" Value="" />
-						<Pin Name="Video13" Type="PinVideoValue" Value="" />
-						<Pin Name="Video14" Type="PinVideoValue" Value="" />
-						<Pin Name="Video15" Type="PinVideoValue" Value="" />
-						<Pin Name="Video16" Type="PinVideoValue" Value="" />
-						<Pin Name="Video17" Type="PinVideoValue" Value="" />
-						<Pin Name="Video18" Type="PinVideoValue" Value="" />
-						<Pin Name="Video19" Type="PinVideoValue" Value="" />
-						<Pin Name="Video20" Type="PinVideoValue" Value="" />
-						<Pin Name="Video21" Type="PinVideoValue" Value="" />
-						<Pin Name="Video22" Type="PinVideoValue" Value="" />
-						<Pin Name="Video23" Type="PinVideoValue" Value="" />
-						<Pin Name="Video24" Type="PinVideoValue" Value="" />
-						<Pin Name="Video25" Type="PinVideoValue" Value="" />
-						<Pin Name="Video26" Type="PinVideoValue" Value="" />
-						<Pin Name="Video27" Type="PinVideoValue" Value="" />
-						<Pin Name="Video28" Type="PinVideoValue" Value="" />
-						<Pin Name="Video29" Type="PinVideoValue" Value="" />
-						<Pin Name="Video30" Type="PinVideoValue" Value="" />
-						<Pin Name="Video31" Type="PinVideoValue" Value="" />
-						<Pin Name="Video32" Type="PinVideoValue" Value="" />
-						<Pin Name="Video33" Type="PinVideoValue" Value="" />
-						<Pin Name="Video34" Type="PinVideoValue" Value="" />
-						<Pin Name="Video35" Type="PinVideoValue" Value="" />
-						<Pin Name="Video36" Type="PinVideoValue" Value="" />
-						<Pin Name="Video37" Type="PinVideoValue" Value="" />
-						<Pin Name="Video38" Type="PinVideoValue" Value="" />
-						<Pin Name="Video39" Type="PinVideoValue" Value="" />
-						<Pin Name="Video40" Type="PinVideoValue" Value="" />
-						<Pin Name="Video41" Type="PinVideoValue" Value="" />
-						<Pin Name="Video42" Type="PinVideoValue" Value="" />
-						<Pin Name="Video43" Type="PinVideoValue" Value="" />
-						<Pin Name="Video44" Type="PinVideoValue" Value="" />
-						<Pin Name="Video45" Type="PinVideoValue" Value="" />
-						<Pin Name="Video46" Type="PinVideoValue" Value="" />
-						<Pin Name="Video47" Type="PinVideoValue" Value="" />
-						<Pin Name="Video48" Type="PinVideoValue" Value="" />
-						<Pin Name="Video49" Type="PinVideoValue" Value="" />
-						<Pin Name="Video50" Type="PinVideoValue" Value="" />
-						<Pin Name="Video51" Type="PinVideoValue" Value="" />
-						<Pin Name="Video52" Type="PinVideoValue" Value="" />
-						<Pin Name="Video53" Type="PinVideoValue" Value="" />
-						<Pin Name="Video54" Type="PinVideoValue" Value="" />
-						<Pin Name="Video55" Type="PinVideoValue" Value="" />
-						<Pin Name="Video56" Type="PinVideoValue" Value="" />
-						<Pin Name="Video57" Type="PinVideoValue" Value="" />
-						<Pin Name="Video58" Type="PinVideoValue" Value="" />
-						<Pin Name="Video59" Type="PinVideoValue" Value="" />
-						<Pin Name="Video60" Type="PinVideoValue" Value="" />
-						<Pin Name="Video61" Type="PinVideoValue" Value="" />
-						<Pin Name="Video62" Type="PinVideoValue" Value="" />
-						<Pin Name="Video63" Type="PinVideoValue" Value="" />
-						<Pin Name="Video64" Type="PinVideoValue" Value="" />
-						<Pin Name="Bool1" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool2" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool3" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool4" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool5" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool6" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool7" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool8" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool9" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool10" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool11" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool12" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool13" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool14" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool15" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool16" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool17" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool18" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool19" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool20" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool21" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool22" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool23" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool24" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool25" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool26" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool27" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool28" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool29" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool30" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool31" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool32" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool33" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool34" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool35" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool36" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool37" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool38" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool39" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool40" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool41" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool42" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool43" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool44" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool45" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool46" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool47" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool48" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool49" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool50" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool51" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool52" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool53" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool54" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool55" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool56" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool57" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool58" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool59" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool60" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool61" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool62" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool63" Type="PinBoolValue" Value="False" />
-						<Pin Name="Bool64" Type="PinBoolValue" Value="False" />
-						<Pin Name="Int1" Type="PinIntValue" Value="0" />
-						<Pin Name="Int2" Type="PinIntValue" Value="0" />
-						<Pin Name="Int3" Type="PinIntValue" Value="0" />
-						<Pin Name="Int4" Type="PinIntValue" Value="0" />
-						<Pin Name="Int5" Type="PinIntValue" Value="0" />
-						<Pin Name="Int6" Type="PinIntValue" Value="0" />
-						<Pin Name="Int7" Type="PinIntValue" Value="0" />
-						<Pin Name="Int8" Type="PinIntValue" Value="0" />
-						<Pin Name="Int9" Type="PinIntValue" Value="0" />
-						<Pin Name="Int10" Type="PinIntValue" Value="0" />
-						<Pin Name="Int11" Type="PinIntValue" Value="0" />
-						<Pin Name="Int12" Type="PinIntValue" Value="0" />
-						<Pin Name="Int13" Type="PinIntValue" Value="0" />
-						<Pin Name="Int14" Type="PinIntValue" Value="0" />
-						<Pin Name="Int15" Type="PinIntValue" Value="0" />
-						<Pin Name="Int16" Type="PinIntValue" Value="0" />
-						<Pin Name="Int17" Type="PinIntValue" Value="0" />
-						<Pin Name="Int18" Type="PinIntValue" Value="0" />
-						<Pin Name="Int19" Type="PinIntValue" Value="0" />
-						<Pin Name="Int20" Type="PinIntValue" Value="0" />
-						<Pin Name="Int21" Type="PinIntValue" Value="0" />
-						<Pin Name="Int22" Type="PinIntValue" Value="0" />
-						<Pin Name="Int23" Type="PinIntValue" Value="0" />
-						<Pin Name="Int24" Type="PinIntValue" Value="0" />
-						<Pin Name="Int25" Type="PinIntValue" Value="0" />
-						<Pin Name="Int26" Type="PinIntValue" Value="0" />
-						<Pin Name="Int27" Type="PinIntValue" Value="0" />
-						<Pin Name="Int28" Type="PinIntValue" Value="0" />
-						<Pin Name="Int29" Type="PinIntValue" Value="0" />
-						<Pin Name="Int30" Type="PinIntValue" Value="0" />
-						<Pin Name="Int31" Type="PinIntValue" Value="0" />
-						<Pin Name="Int32" Type="PinIntValue" Value="0" />
-						<Pin Name="Int33" Type="PinIntValue" Value="0" />
-						<Pin Name="Int34" Type="PinIntValue" Value="0" />
-						<Pin Name="Int35" Type="PinIntValue" Value="0" />
-						<Pin Name="Int36" Type="PinIntValue" Value="0" />
-						<Pin Name="Int37" Type="PinIntValue" Value="0" />
-						<Pin Name="Int38" Type="PinIntValue" Value="0" />
-						<Pin Name="Int39" Type="PinIntValue" Value="0" />
-						<Pin Name="Int40" Type="PinIntValue" Value="0" />
-						<Pin Name="Int41" Type="PinIntValue" Value="0" />
-						<Pin Name="Int42" Type="PinIntValue" Value="0" />
-						<Pin Name="Int43" Type="PinIntValue" Value="0" />
-						<Pin Name="Int44" Type="PinIntValue" Value="0" />
-						<Pin Name="Int45" Type="PinIntValue" Value="0" />
-						<Pin Name="Int46" Type="PinIntValue" Value="0" />
-						<Pin Name="Int47" Type="PinIntValue" Value="0" />
-						<Pin Name="Int48" Type="PinIntValue" Value="0" />
-						<Pin Name="Int49" Type="PinIntValue" Value="0" />
-						<Pin Name="Int50" Type="PinIntValue" Value="0" />
-						<Pin Name="Int51" Type="PinIntValue" Value="0" />
-						<Pin Name="Int52" Type="PinIntValue" Value="0" />
-						<Pin Name="Int53" Type="PinIntValue" Value="0" />
-						<Pin Name="Int54" Type="PinIntValue" Value="0" />
-						<Pin Name="Int55" Type="PinIntValue" Value="0" />
-						<Pin Name="Int56" Type="PinIntValue" Value="0" />
-						<Pin Name="Int57" Type="PinIntValue" Value="0" />
-						<Pin Name="Int58" Type="PinIntValue" Value="0" />
-						<Pin Name="Int59" Type="PinIntValue" Value="0" />
-						<Pin Name="Int60" Type="PinIntValue" Value="0" />
-						<Pin Name="Int61" Type="PinIntValue" Value="0" />
-						<Pin Name="Int62" Type="PinIntValue" Value="0" />
-						<Pin Name="Int63" Type="PinIntValue" Value="0" />
-						<Pin Name="Int64" Type="PinIntValue" Value="0" />
-						<Pin Name="Scalar1" Type="PinScalarValue" Value="90" DefValue="90" />
-						<Pin Name="Scalar2" Type="PinScalarValue" Value="90" DefValue="20" />
-						<Pin Name="Scalar3" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar4" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar5" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar6" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar7" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar8" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar9" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar10" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar11" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar12" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar13" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar14" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar15" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar16" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar17" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar18" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar19" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar20" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar21" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar22" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar23" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar24" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar25" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar26" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar27" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar28" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar29" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar30" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar31" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar32" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar33" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar34" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar35" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar36" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar37" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar38" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar39" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar40" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar41" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar42" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar43" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar44" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar45" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar46" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar47" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar48" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar49" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar50" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar51" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar52" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar53" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar54" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar55" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar56" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar57" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar58" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar59" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar60" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar61" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar62" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar63" Type="PinScalarValue" Value="0" />
-						<Pin Name="Scalar64" Type="PinScalarValue" Value="0" />
-						<Pin Name="Vector1" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector2" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector3" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector4" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector5" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector6" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector7" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector8" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector9" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector10" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector11" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector12" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector13" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector14" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector15" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector16" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector17" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector18" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector19" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector20" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector21" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector22" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector23" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector24" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector25" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector26" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector27" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector28" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector29" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector30" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector31" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector32" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector33" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector34" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector35" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector36" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector37" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector38" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector39" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector40" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector41" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector42" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector43" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector44" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector45" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector46" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector47" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector48" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector49" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector50" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector51" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector52" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector53" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector54" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector55" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector56" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector57" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector58" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector59" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector60" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector61" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector62" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector63" Type="PinVectorValue" Value="" />
-						<Pin Name="Vector64" Type="PinVectorValue" Value="" />
-						<Pin Name="Color1" Type="PinColorValue" Value="" />
-						<Pin Name="Color2" Type="PinColorValue" Value="" />
-						<Pin Name="Color3" Type="PinColorValue" Value="" />
-						<Pin Name="Color4" Type="PinColorValue" Value="" />
-						<Pin Name="Color5" Type="PinColorValue" Value="" />
-						<Pin Name="Color6" Type="PinColorValue" Value="" />
-						<Pin Name="Color7" Type="PinColorValue" Value="" />
-						<Pin Name="Color8" Type="PinColorValue" Value="" />
-						<Pin Name="Color9" Type="PinColorValue" Value="" />
-						<Pin Name="Color10" Type="PinColorValue" Value="" />
-						<Pin Name="Color11" Type="PinColorValue" Value="" />
-						<Pin Name="Color12" Type="PinColorValue" Value="" />
-						<Pin Name="Color13" Type="PinColorValue" Value="" />
-						<Pin Name="Color14" Type="PinColorValue" Value="" />
-						<Pin Name="Color15" Type="PinColorValue" Value="" />
-						<Pin Name="Color16" Type="PinColorValue" Value="" />
-						<Pin Name="Color17" Type="PinColorValue" Value="" />
-						<Pin Name="Color18" Type="PinColorValue" Value="" />
-						<Pin Name="Color19" Type="PinColorValue" Value="" />
-						<Pin Name="Color20" Type="PinColorValue" Value="" />
-						<Pin Name="Color21" Type="PinColorValue" Value="" />
-						<Pin Name="Color22" Type="PinColorValue" Value="" />
-						<Pin Name="Color23" Type="PinColorValue" Value="" />
-						<Pin Name="Color24" Type="PinColorValue" Value="" />
-						<Pin Name="Color25" Type="PinColorValue" Value="" />
-						<Pin Name="Color26" Type="PinColorValue" Value="" />
-						<Pin Name="Color27" Type="PinColorValue" Value="" />
-						<Pin Name="Color28" Type="PinColorValue" Value="" />
-						<Pin Name="Color29" Type="PinColorValue" Value="" />
-						<Pin Name="Color30" Type="PinColorValue" Value="" />
-						<Pin Name="Color31" Type="PinColorValue" Value="" />
-						<Pin Name="Color32" Type="PinColorValue" Value="" />
-						<Pin Name="Color33" Type="PinColorValue" Value="" />
-						<Pin Name="Color34" Type="PinColorValue" Value="" />
-						<Pin Name="Color35" Type="PinColorValue" Value="" />
-						<Pin Name="Color36" Type="PinColorValue" Value="" />
-						<Pin Name="Color37" Type="PinColorValue" Value="" />
-						<Pin Name="Color38" Type="PinColorValue" Value="" />
-						<Pin Name="Color39" Type="PinColorValue" Value="" />
-						<Pin Name="Color40" Type="PinColorValue" Value="" />
-						<Pin Name="Color41" Type="PinColorValue" Value="" />
-						<Pin Name="Color42" Type="PinColorValue" Value="" />
-						<Pin Name="Color43" Type="PinColorValue" Value="" />
-						<Pin Name="Color44" Type="PinColorValue" Value="" />
-						<Pin Name="Color45" Type="PinColorValue" Value="" />
-						<Pin Name="Color46" Type="PinColorValue" Value="" />
-						<Pin Name="Color47" Type="PinColorValue" Value="" />
-						<Pin Name="Color48" Type="PinColorValue" Value="" />
-						<Pin Name="Color49" Type="PinColorValue" Value="" />
-						<Pin Name="Color50" Type="PinColorValue" Value="" />
-						<Pin Name="Color51" Type="PinColorValue" Value="" />
-						<Pin Name="Color52" Type="PinColorValue" Value="" />
-						<Pin Name="Color53" Type="PinColorValue" Value="" />
-						<Pin Name="Color54" Type="PinColorValue" Value="" />
-						<Pin Name="Color55" Type="PinColorValue" Value="" />
-						<Pin Name="Color56" Type="PinColorValue" Value="" />
-						<Pin Name="Color57" Type="PinColorValue" Value="" />
-						<Pin Name="Color58" Type="PinColorValue" Value="" />
-						<Pin Name="Color59" Type="PinColorValue" Value="" />
-						<Pin Name="Color60" Type="PinColorValue" Value="" />
-						<Pin Name="Color61" Type="PinColorValue" Value="" />
-						<Pin Name="Color62" Type="PinColorValue" Value="" />
-						<Pin Name="Color63" Type="PinColorValue" Value="" />
-						<Pin Name="Color64" Type="PinColorValue" Value="" />
-						<Pin Name="Transform1" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform2" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform3" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform4" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform5" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform6" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform7" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform8" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform9" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform10" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform11" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform12" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform13" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform14" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform15" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform16" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform17" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform18" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform19" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform20" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform21" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform22" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform23" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform24" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform25" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform26" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform27" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform28" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform29" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform30" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform31" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform32" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform33" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform34" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform35" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform36" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform37" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform38" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform39" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform40" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform41" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform42" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform43" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform44" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform45" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform46" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform47" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform48" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform49" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform50" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform51" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform52" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform53" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform54" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform55" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform56" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform57" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform58" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform59" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform60" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform61" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform62" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform63" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="Transform64" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-						<Pin Name="String1" Type="PinStringValue" Value="" />
-						<Pin Name="String2" Type="PinStringValue" Value="" />
-						<Pin Name="String3" Type="PinStringValue" Value="" />
-						<Pin Name="String4" Type="PinStringValue" Value="" />
-						<Pin Name="String5" Type="PinStringValue" Value="" />
-						<Pin Name="String6" Type="PinStringValue" Value="" />
-						<Pin Name="String7" Type="PinStringValue" Value="" />
-						<Pin Name="String8" Type="PinStringValue" Value="" />
-						<Pin Name="String9" Type="PinStringValue" Value="" />
-						<Pin Name="String10" Type="PinStringValue" Value="" />
-						<Pin Name="String11" Type="PinStringValue" Value="" />
-						<Pin Name="String12" Type="PinStringValue" Value="" />
-						<Pin Name="String13" Type="PinStringValue" Value="" />
-						<Pin Name="String14" Type="PinStringValue" Value="" />
-						<Pin Name="String15" Type="PinStringValue" Value="" />
-						<Pin Name="String16" Type="PinStringValue" Value="" />
-						<Pin Name="String17" Type="PinStringValue" Value="" />
-						<Pin Name="String18" Type="PinStringValue" Value="" />
-						<Pin Name="String19" Type="PinStringValue" Value="" />
-						<Pin Name="String20" Type="PinStringValue" Value="" />
-						<Pin Name="String21" Type="PinStringValue" Value="" />
-						<Pin Name="String22" Type="PinStringValue" Value="" />
-						<Pin Name="String23" Type="PinStringValue" Value="" />
-						<Pin Name="String24" Type="PinStringValue" Value="" />
-						<Pin Name="String25" Type="PinStringValue" Value="" />
-						<Pin Name="String26" Type="PinStringValue" Value="" />
-						<Pin Name="String27" Type="PinStringValue" Value="" />
-						<Pin Name="String28" Type="PinStringValue" Value="" />
-						<Pin Name="String29" Type="PinStringValue" Value="" />
-						<Pin Name="String30" Type="PinStringValue" Value="" />
-						<Pin Name="String31" Type="PinStringValue" Value="" />
-						<Pin Name="String32" Type="PinStringValue" Value="" />
-						<Pin Name="String33" Type="PinStringValue" Value="" />
-						<Pin Name="String34" Type="PinStringValue" Value="" />
-						<Pin Name="String35" Type="PinStringValue" Value="" />
-						<Pin Name="String36" Type="PinStringValue" Value="" />
-						<Pin Name="String37" Type="PinStringValue" Value="" />
-						<Pin Name="String38" Type="PinStringValue" Value="" />
-						<Pin Name="String39" Type="PinStringValue" Value="" />
-						<Pin Name="String40" Type="PinStringValue" Value="" />
-						<Pin Name="String41" Type="PinStringValue" Value="" />
-						<Pin Name="String42" Type="PinStringValue" Value="" />
-						<Pin Name="String43" Type="PinStringValue" Value="" />
-						<Pin Name="String44" Type="PinStringValue" Value="" />
-						<Pin Name="String45" Type="PinStringValue" Value="" />
-						<Pin Name="String46" Type="PinStringValue" Value="" />
-						<Pin Name="String47" Type="PinStringValue" Value="" />
-						<Pin Name="String48" Type="PinStringValue" Value="" />
-						<Pin Name="String49" Type="PinStringValue" Value="" />
-						<Pin Name="String50" Type="PinStringValue" Value="" />
-						<Pin Name="String51" Type="PinStringValue" Value="" />
-						<Pin Name="String52" Type="PinStringValue" Value="" />
-						<Pin Name="String53" Type="PinStringValue" Value="" />
-						<Pin Name="String54" Type="PinStringValue" Value="" />
-						<Pin Name="String55" Type="PinStringValue" Value="" />
-						<Pin Name="String56" Type="PinStringValue" Value="" />
-						<Pin Name="String57" Type="PinStringValue" Value="" />
-						<Pin Name="String58" Type="PinStringValue" Value="" />
-						<Pin Name="String59" Type="PinStringValue" Value="" />
-						<Pin Name="String60" Type="PinStringValue" Value="" />
-						<Pin Name="String61" Type="PinStringValue" Value="" />
-						<Pin Name="String62" Type="PinStringValue" Value="" />
-						<Pin Name="String63" Type="PinStringValue" Value="" />
-						<Pin Name="String64" Type="PinStringValue" Value="" />
-						<Pin Name="AutoResync" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CopyCollection">
-					<Properties Name="group_B1 Data" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues />
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Tracked Cam Active" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Tracked Cam Active" DefValue="Tracked Cam Active" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Active" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Lit" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Inverse Tonemap" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Cast Shadow" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionScalar">
-					<Properties Name="group_B1 Data_TAA Threshold" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B1 Data_Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B1 Data_AO Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B1 Data_Refl Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Virtuals" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Virtuals" DefValue="Virtuals" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_B Mask" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="B Mask" DefValue="B Mask" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B1 Data_Camera Cut" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Camera Cut" DefValue="Camera Cut" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CopyCollection">
-					<Properties Name="group_B2 Data" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues />
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B2 Data_Active" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B2 Data_Lit" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B2 Data_Inverse Tonemap" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B2 Data_Cast Shadow" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionScalar">
-					<Properties Name="group_B2 Data_TAA Threshold" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B2 Data_Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B2 Data_AO Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B2 Data_Refl Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CopyCollection">
-					<Properties Name="group_B3 Data" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues />
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B3 Data_Active" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B3 Data_Lit" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B3 Data_Inverse Tonemap" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionLogical">
-					<Properties Name="group_B3 Data_Cast Shadow" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionScalar">
-					<Properties Name="group_B3 Data_TAA Threshold" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B3 Data_Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B3 Data_AO Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-				<Module Type="CollectionTransformation">
-					<Properties Name="group_B3 Data_Refl Transform" IsLocked="True">
-						<ExtraData>
-							<item key="Location" type="PointF" value="0, 0" />
-						</ExtraData>
-					</Properties>
-					<PinValues>
-						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
-						<Pin Name="Index" Type="PinIntValue" Value="0" />
-						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
-					</PinValues>
-				</Module>
-			</Children>
-			<ExposerInputPins>
-				<Pin Name="Connection" Type="PinIntValue" IsLocked="True" SourceModule="Project" SourcePin="Connection" />
-				<Pin Name="Out Size" Type="PinVectorValue" IsLocked="True" SourceModule="Project" SourcePin="OutSize" />
-				<Pin Name="Cam Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Project" SourcePin="Transform1" />
-				<Pin Name="Cam Horizontal FOV" Type="PinScalarValue" IsLocked="True" SourceModule="Project" SourcePin="Scalar1" />
-				<Pin Name="Cam Focus Distance" Type="PinScalarValue" IsLocked="True" SourceModule="Project" SourcePin="Scalar2" />
-				<Pin Name="B1 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B1 Data" SourcePin="In" />
-				<Pin Name="B1 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
-				<Pin Name="B1 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video2" />
-				<Pin Name="B1 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video3" />
-				<Pin Name="B2 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B2 Data" SourcePin="In" />
-				<Pin Name="B2 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video4" />
-				<Pin Name="B2 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video5" />
-				<Pin Name="B2 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video6" />
-				<Pin Name="B3 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B3 Data" SourcePin="In" />
-				<Pin Name="B3 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video7" />
-				<Pin Name="B3 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video8" />
-				<Pin Name="B3 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video9" />
-				<Pin Name="VIDEO3" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video10" />
-				<Pin Name="VIDEO2" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video11" />
-				<Pin Name="VIDEO1" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video12" />
-			</ExposerInputPins>
-			<ExposerOutputPins>
-				<Pin Name="Out" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
-				<Pin Name="B Mask" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video2" />
-			</ExposerOutputPins>
-			<Connections>
-				<Connection FromModule="group_B1 Data_Tracked Cam Active" FromPin="Out" ToModule="Project" ToPin="Bool1" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Tracked Cam Active:Out" ToModule="Project" ToPin="Bool1" />
-				<Connection FromModule="group_B1 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool2" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Active:Out" ToModule="Project" ToPin="Bool2" />
-				<Connection FromModule="group_B1 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool3" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Lit:Out" ToModule="Project" ToPin="Bool3" />
-				<Connection FromModule="group_B1 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool4" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool4" />
-				<Connection FromModule="group_B1 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool5" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool5" />
-				<Connection FromModule="group_B1 Data_Virtuals" FromPin="Out" ToModule="Project" ToPin="Bool6" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Virtuals:Out" ToModule="Project" ToPin="Bool6" />
-				<Connection FromModule="group_B1 Data_B Mask" FromPin="Out" ToModule="Project" ToPin="Bool7" IsLocked="True" />
-				<DefConnection From="group_B1 Data_B Mask:Out" ToModule="Project" ToPin="Bool7" />
-				<Connection FromModule="group_B2 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool8" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Active:Out" ToModule="Project" ToPin="Bool8" />
-				<Connection FromModule="group_B2 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool9" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Lit:Out" ToModule="Project" ToPin="Bool9" />
-				<Connection FromModule="group_B2 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool10" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool10" />
-				<Connection FromModule="group_B2 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool11" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool11" />
-				<Connection FromModule="group_B3 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool12" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Active:Out" ToModule="Project" ToPin="Bool12" />
-				<Connection FromModule="group_B3 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool13" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Lit:Out" ToModule="Project" ToPin="Bool13" />
-				<Connection FromModule="group_B3 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool14" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool14" />
-				<Connection FromModule="group_B3 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool15" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool15" />
-				<Connection FromModule="group_B1 Data_Camera Cut" FromPin="Out" ToModule="Project" ToPin="Trigger1" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Camera Cut:Out" ToModule="Project" ToPin="Trigger1" />
-				<Connection FromModule="group_B1 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar3" IsLocked="True" />
-				<DefConnection From="group_B1 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar3" />
-				<Connection FromModule="group_B2 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar4" IsLocked="True" />
-				<DefConnection From="group_B2 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar4" />
-				<Connection FromModule="group_B3 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar5" IsLocked="True" />
-				<DefConnection From="group_B3 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar5" />
-				<Connection FromModule="group_B1 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform2" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Transform:Out" ToModule="Project" ToPin="Transform2" />
-				<Connection FromModule="group_B1 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform3" IsLocked="True" />
-				<DefConnection From="group_B1 Data_AO Transform:Out" ToModule="Project" ToPin="Transform3" />
-				<Connection FromModule="group_B1 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform4" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform4" />
-				<Connection FromModule="group_B2 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform5" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Transform:Out" ToModule="Project" ToPin="Transform5" />
-				<Connection FromModule="group_B2 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform6" IsLocked="True" />
-				<DefConnection From="group_B2 Data_AO Transform:Out" ToModule="Project" ToPin="Transform6" />
-				<Connection FromModule="group_B2 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform7" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform7" />
-				<Connection FromModule="group_B3 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform8" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Transform:Out" ToModule="Project" ToPin="Transform8" />
-				<Connection FromModule="group_B3 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform9" IsLocked="True" />
-				<DefConnection From="group_B3 Data_AO Transform:Out" ToModule="Project" ToPin="Transform9" />
-				<Connection FromModule="group_B3 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform10" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform10" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Active" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Active" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Lit" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Lit" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Inverse Tonemap" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Cast Shadow" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_TAA Threshold" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Transform" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_AO Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_AO Transform" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Refl Transform" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Virtuals" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Virtuals" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_B Mask" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_B Mask" ToPin="Collection" />
-				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Camera Cut" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Camera Cut" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Active" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Active" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Lit" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Lit" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Inverse Tonemap" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Cast Shadow" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_TAA Threshold" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Transform" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_AO Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_AO Transform" ToPin="Collection" />
-				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Refl Transform" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Active" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Active" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Lit" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Lit" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Inverse Tonemap" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Cast Shadow" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_TAA Threshold" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Transform" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_AO Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_AO Transform" ToPin="Collection" />
-				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
-				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" />
 			</Connections>
 		</Module>
 		<Module Type="Compound">
@@ -57843,6 +56805,1045 @@
 				<Connection FromModule="VIDEOS" FromPin="Audio" ToModule="If Audio" ToPin="Then" />
 				<Connection FromModule="If Audio 3" FromPin="Out" ToModule="If Audio" ToPin="Else" />
 				<Connection FromModule="VIDEOS" FromPin="Selected" ToModule="Not Equal" ToPin="A" />
+			</Connections>
+		</Module>
+		<Module Type="Compound">
+			<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="True" Name="STAGE_ADS" IsLocked="False">
+				<ExtraData>
+					<item key="Importer" type="String" value="UnrealProject" />
+					<item key="ImporterVersion" type="Int32" value="7" />
+					<item key="ImportSourcePath" type="String" value="F:\SourceControl\STAGE_ADS\STAGE_ADS.uproject" />
+					<item key="ImportSourceHash" type="String" value="3EBF0D906DAA584F1933841BC2F6A9E1" />
+					<item key="Location" type="PointF" value="155, 0" />
+				</ExtraData>
+			</Properties>
+			<Children>
+				<Module Type="UnrealProject">
+					<Properties Name="Project" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="200, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="ProjectPath" Type="PinStringValue" Value="F:\SourceControl\STAGE_ADS\STAGE_ADS.uproject" DefValue="C:\Users\assis\OneDrive\Documents\Unreal Projects\STAGE_ADS\STAGE_ADS.uproject" />
+						<Pin Name="ProjectData" Type="PinBinBufferValue" Value="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" />
+						<Pin Name="Connection" Type="PinIntValue" Value="ucmCooked" />
+						<Pin Name="OutSize" Type="PinVectorValue" Value="0, 0" />
+						<Pin Name="Video1" Type="PinVideoValue" Value="" />
+						<Pin Name="Video2" Type="PinVideoValue" Value="" />
+						<Pin Name="Video3" Type="PinVideoValue" Value="" />
+						<Pin Name="Video4" Type="PinVideoValue" Value="" />
+						<Pin Name="Video5" Type="PinVideoValue" Value="" />
+						<Pin Name="Video6" Type="PinVideoValue" Value="" />
+						<Pin Name="Video7" Type="PinVideoValue" Value="" />
+						<Pin Name="Video8" Type="PinVideoValue" Value="" />
+						<Pin Name="Video9" Type="PinVideoValue" Value="" />
+						<Pin Name="Video10" Type="PinVideoValue" Value="" />
+						<Pin Name="Video11" Type="PinVideoValue" Value="" />
+						<Pin Name="Video12" Type="PinVideoValue" Value="" />
+						<Pin Name="Video13" Type="PinVideoValue" Value="" />
+						<Pin Name="Video14" Type="PinVideoValue" Value="" />
+						<Pin Name="Video15" Type="PinVideoValue" Value="" />
+						<Pin Name="Video16" Type="PinVideoValue" Value="" />
+						<Pin Name="Video17" Type="PinVideoValue" Value="" />
+						<Pin Name="Video18" Type="PinVideoValue" Value="" />
+						<Pin Name="Video19" Type="PinVideoValue" Value="" />
+						<Pin Name="Video20" Type="PinVideoValue" Value="" />
+						<Pin Name="Video21" Type="PinVideoValue" Value="" />
+						<Pin Name="Video22" Type="PinVideoValue" Value="" />
+						<Pin Name="Video23" Type="PinVideoValue" Value="" />
+						<Pin Name="Video24" Type="PinVideoValue" Value="" />
+						<Pin Name="Video25" Type="PinVideoValue" Value="" />
+						<Pin Name="Video26" Type="PinVideoValue" Value="" />
+						<Pin Name="Video27" Type="PinVideoValue" Value="" />
+						<Pin Name="Video28" Type="PinVideoValue" Value="" />
+						<Pin Name="Video29" Type="PinVideoValue" Value="" />
+						<Pin Name="Video30" Type="PinVideoValue" Value="" />
+						<Pin Name="Video31" Type="PinVideoValue" Value="" />
+						<Pin Name="Video32" Type="PinVideoValue" Value="" />
+						<Pin Name="Video33" Type="PinVideoValue" Value="" />
+						<Pin Name="Video34" Type="PinVideoValue" Value="" />
+						<Pin Name="Video35" Type="PinVideoValue" Value="" />
+						<Pin Name="Video36" Type="PinVideoValue" Value="" />
+						<Pin Name="Video37" Type="PinVideoValue" Value="" />
+						<Pin Name="Video38" Type="PinVideoValue" Value="" />
+						<Pin Name="Video39" Type="PinVideoValue" Value="" />
+						<Pin Name="Video40" Type="PinVideoValue" Value="" />
+						<Pin Name="Video41" Type="PinVideoValue" Value="" />
+						<Pin Name="Video42" Type="PinVideoValue" Value="" />
+						<Pin Name="Video43" Type="PinVideoValue" Value="" />
+						<Pin Name="Video44" Type="PinVideoValue" Value="" />
+						<Pin Name="Video45" Type="PinVideoValue" Value="" />
+						<Pin Name="Video46" Type="PinVideoValue" Value="" />
+						<Pin Name="Video47" Type="PinVideoValue" Value="" />
+						<Pin Name="Video48" Type="PinVideoValue" Value="" />
+						<Pin Name="Video49" Type="PinVideoValue" Value="" />
+						<Pin Name="Video50" Type="PinVideoValue" Value="" />
+						<Pin Name="Video51" Type="PinVideoValue" Value="" />
+						<Pin Name="Video52" Type="PinVideoValue" Value="" />
+						<Pin Name="Video53" Type="PinVideoValue" Value="" />
+						<Pin Name="Video54" Type="PinVideoValue" Value="" />
+						<Pin Name="Video55" Type="PinVideoValue" Value="" />
+						<Pin Name="Video56" Type="PinVideoValue" Value="" />
+						<Pin Name="Video57" Type="PinVideoValue" Value="" />
+						<Pin Name="Video58" Type="PinVideoValue" Value="" />
+						<Pin Name="Video59" Type="PinVideoValue" Value="" />
+						<Pin Name="Video60" Type="PinVideoValue" Value="" />
+						<Pin Name="Video61" Type="PinVideoValue" Value="" />
+						<Pin Name="Video62" Type="PinVideoValue" Value="" />
+						<Pin Name="Video63" Type="PinVideoValue" Value="" />
+						<Pin Name="Video64" Type="PinVideoValue" Value="" />
+						<Pin Name="Bool1" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool2" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool3" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool4" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool5" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool6" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool7" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool8" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool9" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool10" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool11" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool12" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool13" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool14" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool15" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool16" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool17" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool18" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool19" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool20" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool21" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool22" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool23" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool24" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool25" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool26" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool27" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool28" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool29" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool30" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool31" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool32" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool33" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool34" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool35" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool36" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool37" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool38" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool39" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool40" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool41" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool42" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool43" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool44" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool45" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool46" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool47" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool48" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool49" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool50" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool51" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool52" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool53" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool54" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool55" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool56" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool57" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool58" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool59" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool60" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool61" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool62" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool63" Type="PinBoolValue" Value="False" />
+						<Pin Name="Bool64" Type="PinBoolValue" Value="False" />
+						<Pin Name="Int1" Type="PinIntValue" Value="0" />
+						<Pin Name="Int2" Type="PinIntValue" Value="0" />
+						<Pin Name="Int3" Type="PinIntValue" Value="0" />
+						<Pin Name="Int4" Type="PinIntValue" Value="0" />
+						<Pin Name="Int5" Type="PinIntValue" Value="0" />
+						<Pin Name="Int6" Type="PinIntValue" Value="0" />
+						<Pin Name="Int7" Type="PinIntValue" Value="0" />
+						<Pin Name="Int8" Type="PinIntValue" Value="0" />
+						<Pin Name="Int9" Type="PinIntValue" Value="0" />
+						<Pin Name="Int10" Type="PinIntValue" Value="0" />
+						<Pin Name="Int11" Type="PinIntValue" Value="0" />
+						<Pin Name="Int12" Type="PinIntValue" Value="0" />
+						<Pin Name="Int13" Type="PinIntValue" Value="0" />
+						<Pin Name="Int14" Type="PinIntValue" Value="0" />
+						<Pin Name="Int15" Type="PinIntValue" Value="0" />
+						<Pin Name="Int16" Type="PinIntValue" Value="0" />
+						<Pin Name="Int17" Type="PinIntValue" Value="0" />
+						<Pin Name="Int18" Type="PinIntValue" Value="0" />
+						<Pin Name="Int19" Type="PinIntValue" Value="0" />
+						<Pin Name="Int20" Type="PinIntValue" Value="0" />
+						<Pin Name="Int21" Type="PinIntValue" Value="0" />
+						<Pin Name="Int22" Type="PinIntValue" Value="0" />
+						<Pin Name="Int23" Type="PinIntValue" Value="0" />
+						<Pin Name="Int24" Type="PinIntValue" Value="0" />
+						<Pin Name="Int25" Type="PinIntValue" Value="0" />
+						<Pin Name="Int26" Type="PinIntValue" Value="0" />
+						<Pin Name="Int27" Type="PinIntValue" Value="0" />
+						<Pin Name="Int28" Type="PinIntValue" Value="0" />
+						<Pin Name="Int29" Type="PinIntValue" Value="0" />
+						<Pin Name="Int30" Type="PinIntValue" Value="0" />
+						<Pin Name="Int31" Type="PinIntValue" Value="0" />
+						<Pin Name="Int32" Type="PinIntValue" Value="0" />
+						<Pin Name="Int33" Type="PinIntValue" Value="0" />
+						<Pin Name="Int34" Type="PinIntValue" Value="0" />
+						<Pin Name="Int35" Type="PinIntValue" Value="0" />
+						<Pin Name="Int36" Type="PinIntValue" Value="0" />
+						<Pin Name="Int37" Type="PinIntValue" Value="0" />
+						<Pin Name="Int38" Type="PinIntValue" Value="0" />
+						<Pin Name="Int39" Type="PinIntValue" Value="0" />
+						<Pin Name="Int40" Type="PinIntValue" Value="0" />
+						<Pin Name="Int41" Type="PinIntValue" Value="0" />
+						<Pin Name="Int42" Type="PinIntValue" Value="0" />
+						<Pin Name="Int43" Type="PinIntValue" Value="0" />
+						<Pin Name="Int44" Type="PinIntValue" Value="0" />
+						<Pin Name="Int45" Type="PinIntValue" Value="0" />
+						<Pin Name="Int46" Type="PinIntValue" Value="0" />
+						<Pin Name="Int47" Type="PinIntValue" Value="0" />
+						<Pin Name="Int48" Type="PinIntValue" Value="0" />
+						<Pin Name="Int49" Type="PinIntValue" Value="0" />
+						<Pin Name="Int50" Type="PinIntValue" Value="0" />
+						<Pin Name="Int51" Type="PinIntValue" Value="0" />
+						<Pin Name="Int52" Type="PinIntValue" Value="0" />
+						<Pin Name="Int53" Type="PinIntValue" Value="0" />
+						<Pin Name="Int54" Type="PinIntValue" Value="0" />
+						<Pin Name="Int55" Type="PinIntValue" Value="0" />
+						<Pin Name="Int56" Type="PinIntValue" Value="0" />
+						<Pin Name="Int57" Type="PinIntValue" Value="0" />
+						<Pin Name="Int58" Type="PinIntValue" Value="0" />
+						<Pin Name="Int59" Type="PinIntValue" Value="0" />
+						<Pin Name="Int60" Type="PinIntValue" Value="0" />
+						<Pin Name="Int61" Type="PinIntValue" Value="0" />
+						<Pin Name="Int62" Type="PinIntValue" Value="0" />
+						<Pin Name="Int63" Type="PinIntValue" Value="0" />
+						<Pin Name="Int64" Type="PinIntValue" Value="0" />
+						<Pin Name="Scalar1" Type="PinScalarValue" Value="90" DefValue="90" />
+						<Pin Name="Scalar2" Type="PinScalarValue" Value="90" DefValue="20" />
+						<Pin Name="Scalar3" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar4" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar5" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar6" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar7" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar8" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar9" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar10" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar11" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar12" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar13" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar14" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar15" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar16" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar17" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar18" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar19" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar20" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar21" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar22" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar23" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar24" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar25" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar26" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar27" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar28" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar29" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar30" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar31" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar32" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar33" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar34" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar35" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar36" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar37" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar38" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar39" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar40" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar41" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar42" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar43" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar44" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar45" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar46" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar47" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar48" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar49" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar50" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar51" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar52" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar53" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar54" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar55" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar56" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar57" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar58" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar59" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar60" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar61" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar62" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar63" Type="PinScalarValue" Value="0" />
+						<Pin Name="Scalar64" Type="PinScalarValue" Value="0" />
+						<Pin Name="Vector1" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector2" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector3" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector4" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector5" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector6" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector7" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector8" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector9" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector10" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector11" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector12" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector13" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector14" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector15" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector16" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector17" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector18" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector19" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector20" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector21" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector22" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector23" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector24" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector25" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector26" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector27" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector28" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector29" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector30" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector31" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector32" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector33" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector34" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector35" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector36" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector37" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector38" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector39" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector40" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector41" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector42" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector43" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector44" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector45" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector46" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector47" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector48" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector49" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector50" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector51" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector52" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector53" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector54" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector55" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector56" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector57" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector58" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector59" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector60" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector61" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector62" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector63" Type="PinVectorValue" Value="" />
+						<Pin Name="Vector64" Type="PinVectorValue" Value="" />
+						<Pin Name="Color1" Type="PinColorValue" Value="" />
+						<Pin Name="Color2" Type="PinColorValue" Value="" />
+						<Pin Name="Color3" Type="PinColorValue" Value="" />
+						<Pin Name="Color4" Type="PinColorValue" Value="" />
+						<Pin Name="Color5" Type="PinColorValue" Value="" />
+						<Pin Name="Color6" Type="PinColorValue" Value="" />
+						<Pin Name="Color7" Type="PinColorValue" Value="" />
+						<Pin Name="Color8" Type="PinColorValue" Value="" />
+						<Pin Name="Color9" Type="PinColorValue" Value="" />
+						<Pin Name="Color10" Type="PinColorValue" Value="" />
+						<Pin Name="Color11" Type="PinColorValue" Value="" />
+						<Pin Name="Color12" Type="PinColorValue" Value="" />
+						<Pin Name="Color13" Type="PinColorValue" Value="" />
+						<Pin Name="Color14" Type="PinColorValue" Value="" />
+						<Pin Name="Color15" Type="PinColorValue" Value="" />
+						<Pin Name="Color16" Type="PinColorValue" Value="" />
+						<Pin Name="Color17" Type="PinColorValue" Value="" />
+						<Pin Name="Color18" Type="PinColorValue" Value="" />
+						<Pin Name="Color19" Type="PinColorValue" Value="" />
+						<Pin Name="Color20" Type="PinColorValue" Value="" />
+						<Pin Name="Color21" Type="PinColorValue" Value="" />
+						<Pin Name="Color22" Type="PinColorValue" Value="" />
+						<Pin Name="Color23" Type="PinColorValue" Value="" />
+						<Pin Name="Color24" Type="PinColorValue" Value="" />
+						<Pin Name="Color25" Type="PinColorValue" Value="" />
+						<Pin Name="Color26" Type="PinColorValue" Value="" />
+						<Pin Name="Color27" Type="PinColorValue" Value="" />
+						<Pin Name="Color28" Type="PinColorValue" Value="" />
+						<Pin Name="Color29" Type="PinColorValue" Value="" />
+						<Pin Name="Color30" Type="PinColorValue" Value="" />
+						<Pin Name="Color31" Type="PinColorValue" Value="" />
+						<Pin Name="Color32" Type="PinColorValue" Value="" />
+						<Pin Name="Color33" Type="PinColorValue" Value="" />
+						<Pin Name="Color34" Type="PinColorValue" Value="" />
+						<Pin Name="Color35" Type="PinColorValue" Value="" />
+						<Pin Name="Color36" Type="PinColorValue" Value="" />
+						<Pin Name="Color37" Type="PinColorValue" Value="" />
+						<Pin Name="Color38" Type="PinColorValue" Value="" />
+						<Pin Name="Color39" Type="PinColorValue" Value="" />
+						<Pin Name="Color40" Type="PinColorValue" Value="" />
+						<Pin Name="Color41" Type="PinColorValue" Value="" />
+						<Pin Name="Color42" Type="PinColorValue" Value="" />
+						<Pin Name="Color43" Type="PinColorValue" Value="" />
+						<Pin Name="Color44" Type="PinColorValue" Value="" />
+						<Pin Name="Color45" Type="PinColorValue" Value="" />
+						<Pin Name="Color46" Type="PinColorValue" Value="" />
+						<Pin Name="Color47" Type="PinColorValue" Value="" />
+						<Pin Name="Color48" Type="PinColorValue" Value="" />
+						<Pin Name="Color49" Type="PinColorValue" Value="" />
+						<Pin Name="Color50" Type="PinColorValue" Value="" />
+						<Pin Name="Color51" Type="PinColorValue" Value="" />
+						<Pin Name="Color52" Type="PinColorValue" Value="" />
+						<Pin Name="Color53" Type="PinColorValue" Value="" />
+						<Pin Name="Color54" Type="PinColorValue" Value="" />
+						<Pin Name="Color55" Type="PinColorValue" Value="" />
+						<Pin Name="Color56" Type="PinColorValue" Value="" />
+						<Pin Name="Color57" Type="PinColorValue" Value="" />
+						<Pin Name="Color58" Type="PinColorValue" Value="" />
+						<Pin Name="Color59" Type="PinColorValue" Value="" />
+						<Pin Name="Color60" Type="PinColorValue" Value="" />
+						<Pin Name="Color61" Type="PinColorValue" Value="" />
+						<Pin Name="Color62" Type="PinColorValue" Value="" />
+						<Pin Name="Color63" Type="PinColorValue" Value="" />
+						<Pin Name="Color64" Type="PinColorValue" Value="" />
+						<Pin Name="Transform1" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform2" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform3" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform4" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform5" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform6" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform7" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform8" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform9" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform10" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform11" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform12" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform13" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform14" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform15" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform16" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform17" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform18" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform19" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform20" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform21" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform22" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform23" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform24" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform25" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform26" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform27" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform28" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform29" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform30" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform31" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform32" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform33" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform34" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform35" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform36" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform37" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform38" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform39" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform40" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform41" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform42" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform43" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform44" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform45" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform46" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform47" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform48" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform49" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform50" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform51" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform52" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform53" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform54" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform55" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform56" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform57" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform58" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform59" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform60" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform61" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform62" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform63" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="Transform64" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+						<Pin Name="String1" Type="PinStringValue" Value="" />
+						<Pin Name="String2" Type="PinStringValue" Value="" />
+						<Pin Name="String3" Type="PinStringValue" Value="" />
+						<Pin Name="String4" Type="PinStringValue" Value="" />
+						<Pin Name="String5" Type="PinStringValue" Value="" />
+						<Pin Name="String6" Type="PinStringValue" Value="" />
+						<Pin Name="String7" Type="PinStringValue" Value="" />
+						<Pin Name="String8" Type="PinStringValue" Value="" />
+						<Pin Name="String9" Type="PinStringValue" Value="" />
+						<Pin Name="String10" Type="PinStringValue" Value="" />
+						<Pin Name="String11" Type="PinStringValue" Value="" />
+						<Pin Name="String12" Type="PinStringValue" Value="" />
+						<Pin Name="String13" Type="PinStringValue" Value="" />
+						<Pin Name="String14" Type="PinStringValue" Value="" />
+						<Pin Name="String15" Type="PinStringValue" Value="" />
+						<Pin Name="String16" Type="PinStringValue" Value="" />
+						<Pin Name="String17" Type="PinStringValue" Value="" />
+						<Pin Name="String18" Type="PinStringValue" Value="" />
+						<Pin Name="String19" Type="PinStringValue" Value="" />
+						<Pin Name="String20" Type="PinStringValue" Value="" />
+						<Pin Name="String21" Type="PinStringValue" Value="" />
+						<Pin Name="String22" Type="PinStringValue" Value="" />
+						<Pin Name="String23" Type="PinStringValue" Value="" />
+						<Pin Name="String24" Type="PinStringValue" Value="" />
+						<Pin Name="String25" Type="PinStringValue" Value="" />
+						<Pin Name="String26" Type="PinStringValue" Value="" />
+						<Pin Name="String27" Type="PinStringValue" Value="" />
+						<Pin Name="String28" Type="PinStringValue" Value="" />
+						<Pin Name="String29" Type="PinStringValue" Value="" />
+						<Pin Name="String30" Type="PinStringValue" Value="" />
+						<Pin Name="String31" Type="PinStringValue" Value="" />
+						<Pin Name="String32" Type="PinStringValue" Value="" />
+						<Pin Name="String33" Type="PinStringValue" Value="" />
+						<Pin Name="String34" Type="PinStringValue" Value="" />
+						<Pin Name="String35" Type="PinStringValue" Value="" />
+						<Pin Name="String36" Type="PinStringValue" Value="" />
+						<Pin Name="String37" Type="PinStringValue" Value="" />
+						<Pin Name="String38" Type="PinStringValue" Value="" />
+						<Pin Name="String39" Type="PinStringValue" Value="" />
+						<Pin Name="String40" Type="PinStringValue" Value="" />
+						<Pin Name="String41" Type="PinStringValue" Value="" />
+						<Pin Name="String42" Type="PinStringValue" Value="" />
+						<Pin Name="String43" Type="PinStringValue" Value="" />
+						<Pin Name="String44" Type="PinStringValue" Value="" />
+						<Pin Name="String45" Type="PinStringValue" Value="" />
+						<Pin Name="String46" Type="PinStringValue" Value="" />
+						<Pin Name="String47" Type="PinStringValue" Value="" />
+						<Pin Name="String48" Type="PinStringValue" Value="" />
+						<Pin Name="String49" Type="PinStringValue" Value="" />
+						<Pin Name="String50" Type="PinStringValue" Value="" />
+						<Pin Name="String51" Type="PinStringValue" Value="" />
+						<Pin Name="String52" Type="PinStringValue" Value="" />
+						<Pin Name="String53" Type="PinStringValue" Value="" />
+						<Pin Name="String54" Type="PinStringValue" Value="" />
+						<Pin Name="String55" Type="PinStringValue" Value="" />
+						<Pin Name="String56" Type="PinStringValue" Value="" />
+						<Pin Name="String57" Type="PinStringValue" Value="" />
+						<Pin Name="String58" Type="PinStringValue" Value="" />
+						<Pin Name="String59" Type="PinStringValue" Value="" />
+						<Pin Name="String60" Type="PinStringValue" Value="" />
+						<Pin Name="String61" Type="PinStringValue" Value="" />
+						<Pin Name="String62" Type="PinStringValue" Value="" />
+						<Pin Name="String63" Type="PinStringValue" Value="" />
+						<Pin Name="String64" Type="PinStringValue" Value="" />
+						<Pin Name="AutoResync" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CopyCollection">
+					<Properties Name="group_B1 Data" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues />
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Tracked Cam Active" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Tracked Cam Active" DefValue="Tracked Cam Active" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Active" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Lit" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Inverse Tonemap" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Cast Shadow" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B1 Data_TAA Threshold" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B1 Data_Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B1 Data_AO Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B1 Data_Refl Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Virtuals" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Virtuals" DefValue="Virtuals" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_B Mask" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="B Mask" DefValue="B Mask" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Camera Cut" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Camera Cut" DefValue="Camera Cut" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CopyCollection">
+					<Properties Name="group_B2 Data" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues />
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B2 Data_Active" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B2 Data_Lit" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B2 Data_Inverse Tonemap" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B2 Data_Cast Shadow" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B2 Data_TAA Threshold" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B2 Data_Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B2 Data_AO Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B2 Data_Refl Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CopyCollection">
+					<Properties Name="group_B3 Data" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues />
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B3 Data_Active" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Active" DefValue="Active" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B3 Data_Lit" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Lit" DefValue="Lit" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="False" DefValue="False" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B3 Data_Inverse Tonemap" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Inverse Tonemap" DefValue="Inverse Tonemap" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B3 Data_Cast Shadow" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Cast Shadow" DefValue="Cast Shadow" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B3 Data_TAA Threshold" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="TAA Threshold" DefValue="TAA Threshold" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="0.9" DefValue="0.9" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B3 Data_Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Transform" DefValue="Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B3 Data_AO Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="AO Transform" DefValue="AO Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B3 Data_Refl Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Refl Transform" DefValue="Refl Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+			</Children>
+			<ExposerInputPins>
+				<Pin Name="Connection" Type="PinIntValue" IsLocked="True" SourceModule="Project" SourcePin="Connection" />
+				<Pin Name="Out Size" Type="PinVectorValue" IsLocked="True" SourceModule="Project" SourcePin="OutSize" />
+				<Pin Name="Cam Transform" Type="PinTransformationValue" IsLocked="True" SourceModule="Project" SourcePin="Transform1" />
+				<Pin Name="Cam Horizontal FOV" Type="PinScalarValue" IsLocked="True" SourceModule="Project" SourcePin="Scalar1" />
+				<Pin Name="Cam Focus Distance" Type="PinScalarValue" IsLocked="True" SourceModule="Project" SourcePin="Scalar2" />
+				<Pin Name="B1 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B1 Data" SourcePin="In" />
+				<Pin Name="B1 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
+				<Pin Name="B1 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video2" />
+				<Pin Name="B1 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video3" />
+				<Pin Name="B2 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B2 Data" SourcePin="In" />
+				<Pin Name="B2 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video4" />
+				<Pin Name="B2 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video5" />
+				<Pin Name="B2 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video6" />
+				<Pin Name="B3 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B3 Data" SourcePin="In" />
+				<Pin Name="B3 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video7" />
+				<Pin Name="B3 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video8" />
+				<Pin Name="B3 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video9" />
+				<Pin Name="VIDEO3" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video10" />
+				<Pin Name="VIDEO2" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video11" />
+				<Pin Name="VIDEO1" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video12" />
+			</ExposerInputPins>
+			<ExposerOutputPins>
+				<Pin Name="Out" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
+				<Pin Name="B Mask" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video2" />
+			</ExposerOutputPins>
+			<Connections>
+				<Connection FromModule="group_B1 Data_Tracked Cam Active" FromPin="Out" ToModule="Project" ToPin="Bool1" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Tracked Cam Active:Out" ToModule="Project" ToPin="Bool1" />
+				<Connection FromModule="group_B1 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool2" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Active:Out" ToModule="Project" ToPin="Bool2" />
+				<Connection FromModule="group_B1 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool3" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Lit:Out" ToModule="Project" ToPin="Bool3" />
+				<Connection FromModule="group_B1 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool4" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool4" />
+				<Connection FromModule="group_B1 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool5" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool5" />
+				<Connection FromModule="group_B1 Data_Virtuals" FromPin="Out" ToModule="Project" ToPin="Bool6" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Virtuals:Out" ToModule="Project" ToPin="Bool6" />
+				<Connection FromModule="group_B1 Data_B Mask" FromPin="Out" ToModule="Project" ToPin="Bool7" IsLocked="True" />
+				<DefConnection From="group_B1 Data_B Mask:Out" ToModule="Project" ToPin="Bool7" />
+				<Connection FromModule="group_B2 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool8" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Active:Out" ToModule="Project" ToPin="Bool8" />
+				<Connection FromModule="group_B2 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool9" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Lit:Out" ToModule="Project" ToPin="Bool9" />
+				<Connection FromModule="group_B2 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool10" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool10" />
+				<Connection FromModule="group_B2 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool11" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool11" />
+				<Connection FromModule="group_B3 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool12" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Active:Out" ToModule="Project" ToPin="Bool12" />
+				<Connection FromModule="group_B3 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool13" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Lit:Out" ToModule="Project" ToPin="Bool13" />
+				<Connection FromModule="group_B3 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool14" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool14" />
+				<Connection FromModule="group_B3 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool15" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool15" />
+				<Connection FromModule="group_B1 Data_Camera Cut" FromPin="Out" ToModule="Project" ToPin="Trigger1" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Camera Cut:Out" ToModule="Project" ToPin="Trigger1" />
+				<Connection FromModule="group_B1 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar3" IsLocked="True" />
+				<DefConnection From="group_B1 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar3" />
+				<Connection FromModule="group_B2 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar4" IsLocked="True" />
+				<DefConnection From="group_B2 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar4" />
+				<Connection FromModule="group_B3 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar5" IsLocked="True" />
+				<DefConnection From="group_B3 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar5" />
+				<Connection FromModule="group_B1 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform2" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Transform:Out" ToModule="Project" ToPin="Transform2" />
+				<Connection FromModule="group_B1 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform3" IsLocked="True" />
+				<DefConnection From="group_B1 Data_AO Transform:Out" ToModule="Project" ToPin="Transform3" />
+				<Connection FromModule="group_B1 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform4" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform4" />
+				<Connection FromModule="group_B2 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform5" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Transform:Out" ToModule="Project" ToPin="Transform5" />
+				<Connection FromModule="group_B2 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform6" IsLocked="True" />
+				<DefConnection From="group_B2 Data_AO Transform:Out" ToModule="Project" ToPin="Transform6" />
+				<Connection FromModule="group_B2 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform7" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform7" />
+				<Connection FromModule="group_B3 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform8" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Transform:Out" ToModule="Project" ToPin="Transform8" />
+				<Connection FromModule="group_B3 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform9" IsLocked="True" />
+				<DefConnection From="group_B3 Data_AO Transform:Out" ToModule="Project" ToPin="Transform9" />
+				<Connection FromModule="group_B3 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform10" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform10" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Active" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Active" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Lit" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Lit" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Inverse Tonemap" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Cast Shadow" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_TAA Threshold" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Transform" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_AO Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_AO Transform" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Refl Transform" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Virtuals" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Virtuals" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_B Mask" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_B Mask" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Camera Cut" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Camera Cut" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Active" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Active" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Lit" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Lit" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Inverse Tonemap" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Cast Shadow" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_TAA Threshold" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Transform" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_AO Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_AO Transform" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Refl Transform" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Active" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Active" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Lit" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Lit" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Inverse Tonemap" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Inverse Tonemap" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Cast Shadow" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Cast Shadow" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_TAA Threshold" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_TAA Threshold" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Transform" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_AO Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_AO Transform" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" />
 			</Connections>
 		</Module>
 	</Children>
