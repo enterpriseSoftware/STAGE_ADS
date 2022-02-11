@@ -8,7 +8,7 @@
 		<Parameter type="ArrChannelParams">
 			<PreviewChannels type="dictionary" />
 		</Parameter>
-		<Parameter type="ArrEditContextParams" LastControlBoard="OVERLAYS">
+		<Parameter type="ArrEditContextParams" LastControlBoard="CAMERAS">
 			<ControlBoardOrder type="list" itemType="String" />
 			<BookmarkSet type="dictionary" />
 		</Parameter>
@@ -22,6 +22,7 @@
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-01-13T17:16:29.9670709-06:00" />
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-06T18:20:02.0911968-06:00" />
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-10T20:34:25.6562252-06:00" />
+				<item type="ArrHistoryItem" UserName="webol / Paper Dolls Band (paperdolls)" ModifiedTime="2022-02-11T00:01:57.2636402-06:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="null" Tags="null">
@@ -45,8 +46,8 @@
 	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
 		<ExtraData>
 			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
-			<item key="ViewCenter" type="PointF" value="-41.95269, 0.4240253" />
-			<item key="ZoomFactor" type="Single" value="0.618783355" />
+			<item key="ViewCenter" type="PointF" value="218.7096, 200.8327" />
+			<item key="ZoomFactor" type="Single" value="1.271249" />
 		</ExtraData>
 	</Properties>
 	<Children>
@@ -42572,7 +42573,7 @@
 					</Properties>
 					<PinValues>
 						<Pin Name="Active" Type="PinBoolValue" Value="True" />
-						<Pin Name="Selected" Type="PinIntValue" Value="4" />
+						<Pin Name="Selected" Type="PinIntValue" Value="1" />
 						<Pin Name="Video1" Type="PinVideoValue" Value="" />
 						<Pin Name="Video2" Type="PinVideoValue" Value="" />
 						<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -56812,9 +56813,9 @@
 				<ExtraData>
 					<item key="Importer" type="String" value="UnrealProject" />
 					<item key="ImporterVersion" type="Int32" value="7" />
-					<item key="ImportSourcePath" type="String" value="F:\SourceControl\STAGE_ADS\STAGE_ADS.uproject" />
+					<item key="ImportSourcePath" type="String" value="C:\VirtualProduction\STAGE_ADS\STAGE_ADS.uproject" />
 					<item key="ImportSourceHash" type="String" value="3EBF0D906DAA584F1933841BC2F6A9E1" />
-					<item key="Location" type="PointF" value="155, 0" />
+					<item key="Location" type="PointF" value="152, 34" />
 				</ExtraData>
 			</Properties>
 			<Children>
@@ -56825,8 +56826,8 @@
 						</ExtraData>
 					</Properties>
 					<PinValues>
-						<Pin Name="ProjectPath" Type="PinStringValue" Value="F:\SourceControl\STAGE_ADS\STAGE_ADS.uproject" DefValue="C:\Users\assis\OneDrive\Documents\Unreal Projects\STAGE_ADS\STAGE_ADS.uproject" />
-						<Pin Name="ProjectData" Type="PinBinBufferValue" Value="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" />
+						<Pin Name="ProjectPath" Type="PinStringValue" Value="C:\VirtualProduction\STAGE_ADS\STAGE_ADS.uproject" DefValue="C:\VirtualProduction\STAGE_ADS\STAGE_ADS.uproject" />
+						<Pin Name="ProjectData" Type="PinBinBufferValue" Value="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" />
 						<Pin Name="Connection" Type="PinIntValue" Value="ucmCooked" />
 						<Pin Name="OutSize" Type="PinVectorValue" Value="0, 0" />
 						<Pin Name="Video1" Type="PinVideoValue" Value="" />
@@ -57704,6 +57705,114 @@
 						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
 					</PinValues>
 				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B1 Data_Render To Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Render To Depth" DefValue="Render To Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B1 Data_Shadow Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Depth" DefValue="Shadow Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="20" DefValue="20" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B1 Data_Shadow Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Transform" DefValue="Shadow Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B2 Data_Render To Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Render To Depth" DefValue="Render To Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B2 Data_Shadow Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Depth" DefValue="Shadow Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="20" DefValue="20" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B2 Data_Shadow Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Transform" DefValue="Shadow Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionLogical">
+					<Properties Name="group_B3 Data_Render To Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Render To Depth" DefValue="Render To Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinBoolValue" Value="True" DefValue="True" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionScalar">
+					<Properties Name="group_B3 Data_Shadow Depth" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Depth" DefValue="Shadow Depth" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinScalarValue" Value="20" DefValue="20" />
+					</PinValues>
+				</Module>
+				<Module Type="CollectionTransformation">
+					<Properties Name="group_B3 Data_Shadow Transform" IsLocked="True">
+						<ExtraData>
+							<item key="Location" type="PointF" value="0, 0" />
+						</ExtraData>
+					</Properties>
+					<PinValues>
+						<Pin Name="Key" Type="PinStringValue" Value="Shadow Transform" DefValue="Shadow Transform" />
+						<Pin Name="Index" Type="PinIntValue" Value="0" />
+						<Pin Name="Default" Type="PinTransformationValue" Value="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" DefValue="T [0, 0, 0], [0, 0, 0], [1, 1, 1]" />
+					</PinValues>
+				</Module>
 			</Children>
 			<ExposerInputPins>
 				<Pin Name="Connection" Type="PinIntValue" IsLocked="True" SourceModule="Project" SourcePin="Connection" />
@@ -57715,17 +57824,22 @@
 				<Pin Name="B1 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
 				<Pin Name="B1 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video2" />
 				<Pin Name="B1 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video3" />
+				<Pin Name="B1 Shadow Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video4" />
 				<Pin Name="B2 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B2 Data" SourcePin="In" />
-				<Pin Name="B2 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video4" />
-				<Pin Name="B2 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video5" />
-				<Pin Name="B2 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video6" />
+				<Pin Name="B2 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video5" />
+				<Pin Name="B2 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video6" />
+				<Pin Name="B2 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video7" />
+				<Pin Name="B2 Shadow Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video8" />
 				<Pin Name="B3 Data" Type="PinCollectionValue" IsLocked="True" SourceModule="group_B3 Data" SourcePin="In" />
-				<Pin Name="B3 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video7" />
-				<Pin Name="B3 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video8" />
-				<Pin Name="B3 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video9" />
-				<Pin Name="VIDEO3" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video10" />
-				<Pin Name="VIDEO2" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video11" />
-				<Pin Name="VIDEO1" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video12" />
+				<Pin Name="B3 Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video9" />
+				<Pin Name="B3 AO Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video10" />
+				<Pin Name="B3 Refl Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video11" />
+				<Pin Name="B3 Shadow Texture" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video12" />
+				<Pin Name="StandUp" Type="PinTriggerValue" IsLocked="True" SourceModule="Project" SourcePin="Trigger2" />
+				<Pin Name="VIDEO3" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video13" />
+				<Pin Name="VIDEO2" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video14" />
+				<Pin Name="VIDEO1" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video15" />
+				<Pin Name="SitDown" Type="PinTriggerValue" IsLocked="True" SourceModule="Project" SourcePin="Trigger3" />
 			</ExposerInputPins>
 			<ExposerOutputPins>
 				<Pin Name="Out" Type="PinVideoValue" IsLocked="True" SourceModule="Project" SourcePin="Video1" />
@@ -57740,54 +57854,72 @@
 				<DefConnection From="group_B1 Data_Lit:Out" ToModule="Project" ToPin="Bool3" />
 				<Connection FromModule="group_B1 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool4" IsLocked="True" />
 				<DefConnection From="group_B1 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool4" />
-				<Connection FromModule="group_B1 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool5" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool5" />
-				<Connection FromModule="group_B1 Data_Virtuals" FromPin="Out" ToModule="Project" ToPin="Bool6" IsLocked="True" />
-				<DefConnection From="group_B1 Data_Virtuals:Out" ToModule="Project" ToPin="Bool6" />
-				<Connection FromModule="group_B1 Data_B Mask" FromPin="Out" ToModule="Project" ToPin="Bool7" IsLocked="True" />
-				<DefConnection From="group_B1 Data_B Mask:Out" ToModule="Project" ToPin="Bool7" />
-				<Connection FromModule="group_B2 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool8" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Active:Out" ToModule="Project" ToPin="Bool8" />
-				<Connection FromModule="group_B2 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool9" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Lit:Out" ToModule="Project" ToPin="Bool9" />
-				<Connection FromModule="group_B2 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool10" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool10" />
-				<Connection FromModule="group_B2 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool11" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool11" />
-				<Connection FromModule="group_B3 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool12" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Active:Out" ToModule="Project" ToPin="Bool12" />
-				<Connection FromModule="group_B3 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool13" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Lit:Out" ToModule="Project" ToPin="Bool13" />
-				<Connection FromModule="group_B3 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool14" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool14" />
-				<Connection FromModule="group_B3 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool15" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool15" />
+				<Connection FromModule="group_B1 Data_Render To Depth" FromPin="Out" ToModule="Project" ToPin="Bool5" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Render To Depth:Out" ToModule="Project" ToPin="Bool5" />
+				<Connection FromModule="group_B1 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool6" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool6" />
+				<Connection FromModule="group_B1 Data_Virtuals" FromPin="Out" ToModule="Project" ToPin="Bool7" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Virtuals:Out" ToModule="Project" ToPin="Bool7" />
+				<Connection FromModule="group_B1 Data_B Mask" FromPin="Out" ToModule="Project" ToPin="Bool8" IsLocked="True" />
+				<DefConnection From="group_B1 Data_B Mask:Out" ToModule="Project" ToPin="Bool8" />
+				<Connection FromModule="group_B2 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool9" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Active:Out" ToModule="Project" ToPin="Bool9" />
+				<Connection FromModule="group_B2 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool10" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Lit:Out" ToModule="Project" ToPin="Bool10" />
+				<Connection FromModule="group_B2 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool11" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool11" />
+				<Connection FromModule="group_B2 Data_Render To Depth" FromPin="Out" ToModule="Project" ToPin="Bool12" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Render To Depth:Out" ToModule="Project" ToPin="Bool12" />
+				<Connection FromModule="group_B2 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool13" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool13" />
+				<Connection FromModule="group_B3 Data_Active" FromPin="Out" ToModule="Project" ToPin="Bool14" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Active:Out" ToModule="Project" ToPin="Bool14" />
+				<Connection FromModule="group_B3 Data_Lit" FromPin="Out" ToModule="Project" ToPin="Bool15" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Lit:Out" ToModule="Project" ToPin="Bool15" />
+				<Connection FromModule="group_B3 Data_Inverse Tonemap" FromPin="Out" ToModule="Project" ToPin="Bool16" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Inverse Tonemap:Out" ToModule="Project" ToPin="Bool16" />
+				<Connection FromModule="group_B3 Data_Render To Depth" FromPin="Out" ToModule="Project" ToPin="Bool17" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Render To Depth:Out" ToModule="Project" ToPin="Bool17" />
+				<Connection FromModule="group_B3 Data_Cast Shadow" FromPin="Out" ToModule="Project" ToPin="Bool18" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Cast Shadow:Out" ToModule="Project" ToPin="Bool18" />
 				<Connection FromModule="group_B1 Data_Camera Cut" FromPin="Out" ToModule="Project" ToPin="Trigger1" IsLocked="True" />
 				<DefConnection From="group_B1 Data_Camera Cut:Out" ToModule="Project" ToPin="Trigger1" />
 				<Connection FromModule="group_B1 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar3" IsLocked="True" />
 				<DefConnection From="group_B1 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar3" />
-				<Connection FromModule="group_B2 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar4" IsLocked="True" />
-				<DefConnection From="group_B2 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar4" />
-				<Connection FromModule="group_B3 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar5" IsLocked="True" />
-				<DefConnection From="group_B3 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar5" />
+				<Connection FromModule="group_B1 Data_Shadow Depth" FromPin="Out" ToModule="Project" ToPin="Scalar4" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Shadow Depth:Out" ToModule="Project" ToPin="Scalar4" />
+				<Connection FromModule="group_B2 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar5" IsLocked="True" />
+				<DefConnection From="group_B2 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar5" />
+				<Connection FromModule="group_B2 Data_Shadow Depth" FromPin="Out" ToModule="Project" ToPin="Scalar6" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Shadow Depth:Out" ToModule="Project" ToPin="Scalar6" />
+				<Connection FromModule="group_B3 Data_TAA Threshold" FromPin="Out" ToModule="Project" ToPin="Scalar7" IsLocked="True" />
+				<DefConnection From="group_B3 Data_TAA Threshold:Out" ToModule="Project" ToPin="Scalar7" />
+				<Connection FromModule="group_B3 Data_Shadow Depth" FromPin="Out" ToModule="Project" ToPin="Scalar8" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Shadow Depth:Out" ToModule="Project" ToPin="Scalar8" />
 				<Connection FromModule="group_B1 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform2" IsLocked="True" />
 				<DefConnection From="group_B1 Data_Transform:Out" ToModule="Project" ToPin="Transform2" />
 				<Connection FromModule="group_B1 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform3" IsLocked="True" />
 				<DefConnection From="group_B1 Data_AO Transform:Out" ToModule="Project" ToPin="Transform3" />
 				<Connection FromModule="group_B1 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform4" IsLocked="True" />
 				<DefConnection From="group_B1 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform4" />
-				<Connection FromModule="group_B2 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform5" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Transform:Out" ToModule="Project" ToPin="Transform5" />
-				<Connection FromModule="group_B2 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform6" IsLocked="True" />
-				<DefConnection From="group_B2 Data_AO Transform:Out" ToModule="Project" ToPin="Transform6" />
-				<Connection FromModule="group_B2 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform7" IsLocked="True" />
-				<DefConnection From="group_B2 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform7" />
-				<Connection FromModule="group_B3 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform8" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Transform:Out" ToModule="Project" ToPin="Transform8" />
-				<Connection FromModule="group_B3 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform9" IsLocked="True" />
-				<DefConnection From="group_B3 Data_AO Transform:Out" ToModule="Project" ToPin="Transform9" />
-				<Connection FromModule="group_B3 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform10" IsLocked="True" />
-				<DefConnection From="group_B3 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform10" />
+				<Connection FromModule="group_B1 Data_Shadow Transform" FromPin="Out" ToModule="Project" ToPin="Transform5" IsLocked="True" />
+				<DefConnection From="group_B1 Data_Shadow Transform:Out" ToModule="Project" ToPin="Transform5" />
+				<Connection FromModule="group_B2 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform6" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Transform:Out" ToModule="Project" ToPin="Transform6" />
+				<Connection FromModule="group_B2 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform7" IsLocked="True" />
+				<DefConnection From="group_B2 Data_AO Transform:Out" ToModule="Project" ToPin="Transform7" />
+				<Connection FromModule="group_B2 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform8" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform8" />
+				<Connection FromModule="group_B2 Data_Shadow Transform" FromPin="Out" ToModule="Project" ToPin="Transform9" IsLocked="True" />
+				<DefConnection From="group_B2 Data_Shadow Transform:Out" ToModule="Project" ToPin="Transform9" />
+				<Connection FromModule="group_B3 Data_Transform" FromPin="Out" ToModule="Project" ToPin="Transform10" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Transform:Out" ToModule="Project" ToPin="Transform10" />
+				<Connection FromModule="group_B3 Data_AO Transform" FromPin="Out" ToModule="Project" ToPin="Transform11" IsLocked="True" />
+				<DefConnection From="group_B3 Data_AO Transform:Out" ToModule="Project" ToPin="Transform11" />
+				<Connection FromModule="group_B3 Data_Refl Transform" FromPin="Out" ToModule="Project" ToPin="Transform12" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Refl Transform:Out" ToModule="Project" ToPin="Transform12" />
+				<Connection FromModule="group_B3 Data_Shadow Transform" FromPin="Out" ToModule="Project" ToPin="Transform13" IsLocked="True" />
+				<DefConnection From="group_B3 Data_Shadow Transform:Out" ToModule="Project" ToPin="Transform13" />
 				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" IsLocked="True" />
 				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Tracked Cam Active" ToPin="Collection" />
 				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Active" ToPin="Collection" IsLocked="True" />
@@ -57844,6 +57976,24 @@
 				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_AO Transform" ToPin="Collection" />
 				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" IsLocked="True" />
 				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Refl Transform" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Render To Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Render To Depth" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Shadow Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Shadow Depth" ToPin="Collection" />
+				<Connection FromModule="group_B1 Data" FromPin="Out" ToModule="group_B1 Data_Shadow Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B1 Data:Out" ToModule="group_B1 Data_Shadow Transform" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Render To Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Render To Depth" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Shadow Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Shadow Depth" ToPin="Collection" />
+				<Connection FromModule="group_B2 Data" FromPin="Out" ToModule="group_B2 Data_Shadow Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B2 Data:Out" ToModule="group_B2 Data_Shadow Transform" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Render To Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Render To Depth" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Shadow Depth" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Shadow Depth" ToPin="Collection" />
+				<Connection FromModule="group_B3 Data" FromPin="Out" ToModule="group_B3 Data_Shadow Transform" ToPin="Collection" IsLocked="True" />
+				<DefConnection From="group_B3 Data:Out" ToModule="group_B3 Data_Shadow Transform" ToPin="Collection" />
 			</Connections>
 		</Module>
 	</Children>
