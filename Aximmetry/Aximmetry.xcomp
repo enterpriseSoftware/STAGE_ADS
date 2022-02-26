@@ -23,6 +23,8 @@
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-06T18:20:02.0911968-06:00" />
 				<item type="ArrHistoryItem" UserName="Daniel / Daniel kelley (danielvfx)" ModifiedTime="2022-02-10T20:34:25.6562252-06:00" />
 				<item type="ArrHistoryItem" UserName="webol / Paper Dolls Band (paperdolls)" ModifiedTime="2022-02-11T00:01:57.2636402-06:00" />
+				<item type="ArrHistoryItem" UserName="webol / Paper Dolls Band (paperdolls)" ModifiedTime="2022-02-13T22:27:08.9415954-06:00" />
+				<item type="ArrHistoryItem" UserName="webol / Paper Dolls Band (paperdolls)" ModifiedTime="2022-02-23T22:34:55.0451410-06:00" />
 			</Items>
 		</Parameter>
 		<Parameter type="InformationParams" Description="null" Tags="null">
@@ -46,8 +48,8 @@
 	<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="Root" IsLocked="False">
 		<ExtraData>
 			<item key="CurveEditorLayout" type="String" value="&lt;CurveEditorLayout&gt;&#xD;&#xA;&#x9;&lt;Props&gt;&#xD;&#xA;&#x9;&#x9;&lt;StartTime&gt;-0.02&lt;/StartTime&gt;&#xD;&#xA;&#x9;&#x9;&lt;Zooming&gt;250&lt;/Zooming&gt;&#xD;&#xA;&#x9;&#x9;&lt;HeadersWidth&gt;200&lt;/HeadersWidth&gt;&#xD;&#xA;&#x9;&#x9;&lt;ScrollPos&gt;0&lt;/ScrollPos&gt;&#xD;&#xA;&#x9;&lt;/Props&gt;&#xD;&#xA;&lt;/CurveEditorLayout&gt;" />
-			<item key="ViewCenter" type="PointF" value="218.7096, 200.8327" />
-			<item key="ZoomFactor" type="Single" value="1.271249" />
+			<item key="ViewCenter" type="PointF" value="-482.2266, 189.8914" />
+			<item key="ZoomFactor" type="Single" value="0.382892847" />
 		</ExtraData>
 	</Properties>
 	<Children>
@@ -98,7 +100,7 @@
 										<ExtraData />
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinIntValue" Value="4" />
+										<Pin Name="In" Type="PinIntValue" Value="3" />
 										<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
 										<Pin Name="Default" Type="PinIntValue" Value="0" />
 									</PinValues>
@@ -812,11 +814,11 @@
 											<TimeFormat type="MediaTimeFormatModifier" FrameRate="30" ModType="True" ModFrame="False" ModMusical="False" ModBaseDate="False" ModDateTimeFormat="False" Type="Time" FPS="30" BPM="120" BeatsPerMeasure="4" TicksPerBeat="64" BaseDate="2016-06-21T00:00:00.0000000" DateTimeFormat="yy-MM-dd HH:mm" />
 											<Markers />
 										</Pin>
-										<Pin Name="PlayingState" Type="PinIntValue" Value="psStopped" />
-										<Pin Name="Speed" Type="PinScalarValue" Value="1" />
-										<Pin Name="Backwards" Type="PinBoolValue" Value="False" />
-										<Pin Name="Bounce" Type="PinBoolValue" Value="False" />
-										<Pin Name="Looping" Type="PinBoolValue" Value="False" />
+										<Pin Name="PlayingState" Type="PinIntValue" Value="psPlaying" />
+										<Pin Name="Speed" Type="PinScalarValue" Value="0.06666667" />
+										<Pin Name="Backwards" Type="PinBoolValue" Value="True" />
+										<Pin Name="Bounce" Type="PinBoolValue" Value="True" />
+										<Pin Name="Looping" Type="PinBoolValue" Value="True" />
 										<Pin Name="StayInLoopReg" Type="PinBoolValue" Value="True" />
 										<Pin Name="AutoLoopReg" Type="PinBoolValue" Value="True" />
 										<Pin Name="LoopStart" Type="PinDoubleValue" Value="0" />
@@ -923,7 +925,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Selected" Type="PinIntValue" Value="1" />
+										<Pin Name="Selected" Type="PinIntValue" Value="5" />
 										<Pin Name="Value1" Type="PinVectorValue" Value="0" />
 										<Pin Name="Value2" Type="PinVectorValue" Value="1" />
 										<Pin Name="Value3" Type="PinVectorValue" Value="2" />
@@ -11779,7 +11781,7 @@
 								</ExtraData>
 							</Properties>
 							<PinValues>
-								<Pin Name="Selected" Type="PinIntValue" Value="4" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="Value1" Type="PinVectorValue" Value="" />
 								<Pin Name="Value2" Type="PinVectorValue" Value="" />
 								<Pin Name="Value3" Type="PinVectorValue" Value="" />
@@ -12238,7 +12240,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="Selected" Type="PinIntValue" Value="4" />
+										<Pin Name="Selected" Type="PinIntValue" Value="3" />
 										<Pin Name="Value1" Type="PinVectorValue" Value="" />
 										<Pin Name="Value2" Type="PinVectorValue" Value="" />
 										<Pin Name="Value3" Type="PinVectorValue" Value="" />
@@ -25246,8 +25248,8 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="BILLBOARDS" IsLocked="False">
 						<ExtraData>
 							<item key="Location" type="PointF" value="520, -1647" />
-							<item key="ViewCenter" type="PointF" value="196.109, 104.9432" />
-							<item key="ZoomFactor" type="Single" value="0.7866278" />
+							<item key="ViewCenter" type="PointF" value="281.4169, 126.9435" />
+							<item key="ZoomFactor" type="Single" value="0.618783355" />
 						</ExtraData>
 					</Properties>
 					<Children />
@@ -42573,7 +42575,7 @@
 					</Properties>
 					<PinValues>
 						<Pin Name="Active" Type="PinBoolValue" Value="True" />
-						<Pin Name="Selected" Type="PinIntValue" Value="1" />
+						<Pin Name="Selected" Type="PinIntValue" Value="4" />
 						<Pin Name="Video1" Type="PinVideoValue" Value="" />
 						<Pin Name="Video2" Type="PinVideoValue" Value="" />
 						<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -44873,7 +44875,7 @@
 						</ExtraData>
 					</Properties>
 					<PinValues>
-						<Pin Name="Selected" Type="PinIntValue" Value="0" />
+						<Pin Name="Selected" Type="PinIntValue" Value="1" />
 						<Pin Name="Value1" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value2" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value3" Type="PinScalarValue" Value="0" />
@@ -44901,7 +44903,7 @@
 						</ExtraData>
 					</Properties>
 					<PinValues>
-						<Pin Name="Selected" Type="PinIntValue" Value="0" />
+						<Pin Name="Selected" Type="PinIntValue" Value="1" />
 						<Pin Name="Value1" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value2" Type="PinScalarValue" Value="0" />
 						<Pin Name="Value3" Type="PinScalarValue" Value="0" />
@@ -53333,7 +53335,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinIntValue" Value="1" />
+										<Pin Name="In" Type="PinIntValue" Value="0" />
 									</PinValues>
 								</Module>
 								<Module Type="CopyVideo">
@@ -53480,7 +53482,7 @@
 								<Pin Name="Behaviour" Type="PinIntValue" Value="ssbCascading" />
 								<Pin Name="FadeTime" Type="PinScalarValue" Value="1" />
 								<Pin Name="FadeGamma" Type="PinScalarValue" Value="1" />
-								<Pin Name="Selected" Type="PinIntValue" Value="1" />
+								<Pin Name="Selected" Type="PinIntValue" Value="0" />
 								<Pin Name="Video1" Type="PinVideoValue" Value="" />
 								<Pin Name="Video2" Type="PinVideoValue" Value="" />
 								<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -53553,8 +53555,8 @@
 					<Properties Color="" ColorEdited="False" ArraySize="1" ArrayIndexOnly="0" IsContentLocked="False" Name="OVERLAYS" IsLocked="False">
 						<ExtraData>
 							<item key="Location" type="PointF" value="-84, -337" />
-							<item key="ViewCenter" type="PointF" value="617.1796, 294.6752" />
-							<item key="ZoomFactor" type="Single" value="0.6640234" />
+							<item key="ViewCenter" type="PointF" value="1159.413, 233.2516" />
+							<item key="ZoomFactor" type="Single" value="0.410886616" />
 						</ExtraData>
 					</Properties>
 					<Children />
@@ -54009,7 +54011,7 @@
 							</Properties>
 							<PinValues>
 								<Pin Name="Active" Type="PinBoolValue" Value="True" />
-								<Pin Name="Selected" Type="PinIntValue" Value="6" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="Video1" Type="PinVideoValue" Value="" />
 								<Pin Name="Video2" Type="PinVideoValue" Value="" />
 								<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -54067,7 +54069,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinStringValue" Value="D:\STAGE_ADS\Video\21557842_slideshow_by_openfx_preview.mp4" />
+										<Pin Name="In" Type="PinStringValue" Value="C:\Users\webol\OneDrive\Pictures\paperdollslogo.png" />
 										<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
 										<Pin Name="Default" Type="PinStringValue" Value="" />
 									</PinValues>
@@ -54139,7 +54141,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinIntValue" Value="6" />
+										<Pin Name="In" Type="PinIntValue" Value="3" />
 									</PinValues>
 								</Module>
 								<Module Type="CopyLogicalAC">
@@ -54246,7 +54248,7 @@
 							</Properties>
 							<PinValues>
 								<Pin Name="Active" Type="PinBoolValue" Value="True" />
-								<Pin Name="Selected" Type="PinIntValue" Value="6" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
 							</PinValues>
 						</Module>
@@ -54345,7 +54347,7 @@
 								</ExtraData>
 							</Properties>
 							<PinValues>
-								<Pin Name="Selected" Type="PinIntValue" Value="6" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="Value1" Type="PinDoubleValue" Value="0" />
 								<Pin Name="Value2" Type="PinDoubleValue" Value="0" />
 								<Pin Name="Value3" Type="PinDoubleValue" Value="0" />
@@ -56116,7 +56118,7 @@
 							</Properties>
 							<PinValues>
 								<Pin Name="Active" Type="PinBoolValue" Value="True" />
-								<Pin Name="Selected" Type="PinIntValue" Value="5" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="Video1" Type="PinVideoValue" Value="" />
 								<Pin Name="Video2" Type="PinVideoValue" Value="" />
 								<Pin Name="Video3" Type="PinVideoValue" Value="" />
@@ -56174,7 +56176,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinStringValue" Value="D:\Pray For Rain1\Render\Thumbnail#2.jpg" />
+										<Pin Name="In" Type="PinStringValue" Value="C:\Users\webol\OneDrive\Pictures\paperdollslogo.png" />
 										<Pin Name="UseDefault" Type="PinBoolValue" Value="False" />
 										<Pin Name="Default" Type="PinStringValue" Value="" />
 									</PinValues>
@@ -56246,7 +56248,7 @@
 										</ExtraData>
 									</Properties>
 									<PinValues>
-										<Pin Name="In" Type="PinIntValue" Value="5" />
+										<Pin Name="In" Type="PinIntValue" Value="3" />
 									</PinValues>
 								</Module>
 								<Module Type="CopyLogicalAC">
@@ -56353,7 +56355,7 @@
 							</Properties>
 							<PinValues>
 								<Pin Name="Active" Type="PinBoolValue" Value="True" />
-								<Pin Name="Selected" Type="PinIntValue" Value="5" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="ForceAll" Type="PinBoolValue" Value="False" />
 							</PinValues>
 						</Module>
@@ -56452,7 +56454,7 @@
 								</ExtraData>
 							</Properties>
 							<PinValues>
-								<Pin Name="Selected" Type="PinIntValue" Value="5" />
+								<Pin Name="Selected" Type="PinIntValue" Value="3" />
 								<Pin Name="Value1" Type="PinDoubleValue" Value="0" />
 								<Pin Name="Value2" Type="PinDoubleValue" Value="0" />
 								<Pin Name="Value3" Type="PinDoubleValue" Value="0" />
